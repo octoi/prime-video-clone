@@ -11,3 +11,9 @@ const List<String> latestMoviesImages = [
   'https://i.ytimg.com/vi/COGg-Vjauwo/maxresdefault.jpg',
   'https://cdn.flickeringmyth.com/wp-content/uploads/2020/01/hawkeye.png',
 ];
+
+List<String> movieImages() {
+  List<String> images = [...latestMoviesImages, ...topImages];
+  images.shuffle();
+  return images;
+}
