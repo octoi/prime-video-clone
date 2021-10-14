@@ -32,14 +32,26 @@ class Home extends StatelessWidget {
           physics: const BouncingScrollPhysics(),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
-              Top(),
-              MovieList(
+            children: [
+              const Top(),
+              const MovieList(
                 title: 'Latest Movies',
                 images: latestMoviesImages,
                 height: 120.0,
                 width: 200.0,
-              )
+              ),
+              MovieList(
+                title: 'What in Your Language',
+                images: movieImages(),
+                height: 240.0,
+                width: 200.0,
+              ),
+              MovieList(
+                title: 'Recommended',
+                images: movieImages(),
+                height: 120.0,
+                width: 200.0,
+              ),
             ],
           ),
         ),
