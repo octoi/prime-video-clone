@@ -15,6 +15,7 @@ class Top extends StatelessWidget {
             .map((image) => Item(
                   image: image,
                   height: 220.0,
+                  isTop: true,
                 ))
             .toList(),
       ),
